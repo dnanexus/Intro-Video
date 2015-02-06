@@ -1,0 +1,23 @@
+{
+  "name": "vcftools-singletons",
+  "dxapi": "1.0.0",
+  "inputSpec": [
+    {
+      "patterns": [
+        "*.vcf.gz"
+      ],
+      "name": "vcf",
+      "class": "file"
+    }
+  ],
+  "outputSpec": [
+    {
+      "name": "singletons",
+      "class": "file"
+    }
+  ],
+  "runSpec": {
+    "file": "src/code.sh",
+    "interpreter": "bash"
+  }
+}
